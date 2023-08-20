@@ -1,0 +1,129 @@
+$backgroundColor: #efefef;
+$radius: 40%;
+
+.formdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 60%;
+  padding-top: 5px;
+
+  p {
+    font-size: 20px;
+    margin: 40px 0;
+    font-weight: 700;
+  }
+
+  form {
+    label {
+      display: flex;
+      margin: 1rem -1;
+      input {
+        width: 400px;
+        height: 6vh;
+  
+      }
+      input::placeholder {
+        font-size: 15px;
+        border-color: #520877;
+      }
+
+      span {
+        margin: auto 1em;
+        font-size: 18px;
+       font-weight: 700;
+        color:rgb(118, 7, 133)
+      }
+
+      
+    }
+  }
+  .selectMethod {
+    .methods {
+      
+      display: flex;
+      
+      align-items: center;
+      align-content: center;
+    
+    }
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  }
+}
+button {
+  margin: 5px;
+  align-content: center;
+
+  
+}
+.custom-btn {
+  
+  width: 130px;
+  height: 40px;
+  color: #ffffff;
+  
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-5 {
+  //align-content: center;
+
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(165, 190, 19);
+background: linear-gradient(0deg, rgb(78, 48, 74) 0%, rgb(151, 42, 155) 100%);
+}
+.btn-5:hover {
+  color: #520877;
+  background: transparent;
+   box-shadow:none;
+}
+
+
+.btn-5:before,
+.btn-5:after{
+  content:"";
+
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #490a3f;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
